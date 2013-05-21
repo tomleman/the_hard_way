@@ -1,0 +1,64 @@
+irb
+
+# Open the ruby script containing the module
+irb(main):001:0> require './ex25'
+=> true
+
+# Defining 'sentence' for IRB
+irb(main):002:0> sentence = "All good things come to those who wait."
+=> "All good things come to those who wait."
+
+# Breaking up the words of the sentence into individual strings and defining 'words'.
+irb(main):003:0> words = Ex25.break_words(sentence)
+=> ["All", "good", "things", "come", "to", "those", "who", "wait."]
+
+# Sorting the words into alphabetical order and defining 'sorted_words'
+irb(main):004:0> sorted_words = Ex25.sort_words(words)
+=> ["All", "come", "good", "things", "those", "to", "wait.", "who"]
+
+# Calling the first word in the 'word' group.
+irb(main):005:0> Ex25.print_first_word(words)
+All
+=> nil
+
+#Calling the last word in the 'word' group.
+irb(main):006:0> Ex25.print_last_word(words)
+wait.
+=> nil
+
+# The first and last words have been popped from the sentence, hence they don't appear here.
+irb(main):008:0> words
+=> ["good", "things", "come", "to", "those", "who"]
+
+# Calling the first word from 'sorted_words'
+irb(main):009:0> Ex25.print_first_word(sorted_words)
+All
+=> nil
+
+# Calling the last work from 'sorted_words'
+irb(main):010:0> Ex25.print_last_word(sorted_words)
+who
+=> nil
+
+# Displays the remaining words that haven't been popped.
+irb(main):011:0> sorted_words
+=> ["come", "good", "things", "those", "to", "wait."]
+
+# Running the sort_sentence method pulls all the words back in and displays them in order again.
+irb(main):012:0> Ex25.sort_sentence(sentence)
+=> ["All", "come", "good", "things", "those", "to", "wait.", "who"]
+
+# Displays the first and last words from 'sentence'
+irb(main):013:0> Ex25.print_first_and_last(sentence)
+All
+wait.
+=> nil
+
+# Sorts 'sentence' within itself, and displays the first and last (sorted) words.
+irb(main):014:0> Ex25.print_first_and_last_sorted(sentence)
+All
+who
+=> nil
+
+# Ctrl-D to exit.
+irb(main):015:0> ^D
