@@ -21,7 +21,7 @@ end
 
 puts "Let's do some math with just functions!"
 
-# Assigns variables and values for A and B
+# Assigns variables and values for A and B in the methods above.
 age = add(30, 5)
 height = subtract(78, 4)
 weight = multiply(90, 2)
