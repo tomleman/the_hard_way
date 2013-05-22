@@ -17,7 +17,7 @@ if door == "1"
 	if bear == "1"
 		puts "The cake is a lie. The bear eats your face off. Good job!"
 	elsif bear == "2"
-		puts "The bear eats your legs off. Good job!"
+		puts "The bear eats your legs off. Good luck dragging yourself home!"
 	elsif bear == "3"
 		puts "You are viciously and mercilessly mauled. What did you expect? It's a bear, you idiot."
 	else
