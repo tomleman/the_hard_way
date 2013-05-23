@@ -1,15 +1,15 @@
 def anagrams(words)
 	# Defines result as a new array
 	result = []
-	# Splits words in the initial array.
+	# Iterates over each word in the initial array.
 	words.each do |word|
 	  # Splits the word down to individual letters.
 	  split_word = word.split('').sort
 	  # Defines the array for the matching words to go in
-	  anagrams = []
+		anagrams = []
 	  # Splits the next word in the array 
 	  words.each do |another_word|
-	  	#Splits that next work into it's letters and sorts alphabetically
+	  	#Splits that next word into it's letters and sorts alphabetically
 	  	another_split_word = another_word.split('').sort	
 	  	# compare with the others in the array.
 	  	if split_word == another_split_word
